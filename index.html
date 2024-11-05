@@ -3,15 +3,53 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./src/typescript.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap"
+    rel="stylesheet">
+  <title>tailwind</title>
 </head>
 
 <body>
-  <h1 class="text-blue-600">Probando tailwind</h1>
+  <h1 class="text-orange-600 bg-gray-500 py-5 m-4">Probando tailwind</h1>
+  <div class="flex justify-center m-2">
+    <input class="text-2xl bg-green-400 p-4 rounded-md hover:bg-green-600" type="button" value="pulsame" />
+  </div>
+  <p class="text-center bg-red-400 italic font-bold">Me gusta tailwind</p>
+  <div class="text-center bg-gradient-to-r from-blue-500 to-green-500 p-4 m-2"> Me gusta tailwind</div>
+  <span class="text-center  border-4 border-primary p-2"> Me gusta tailwind</span>
+  <div class="font-robo my-5">Esto es tailwind</div>
+  <div class="font-snow text-3xl my-5">Esto es tailwind</div>
+  <div class="bg-fuchsia-400 sm:bg-orange-400 md:bg-red-400">Cambia el tamaño de la ventana</div>
+  <!-- sm 640 px -->
+  <!-- md 768 px -->
+  <!-- lg 1024 px -->
+  <!-- xl 1280 px -->
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div>contenido 1</div>
+    <div>contenido 2</div>
+  </div>
 
+  <button
+    class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+    <span
+      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+      Green to blue
+    </span>
+  </button>
+
+  <div class="container mx-auto bg-slate-400 pg-4 w-3/12 h-52">
+    Esto es responsive
+  </div>
 </body>
 
 </html>
